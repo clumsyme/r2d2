@@ -17,7 +17,7 @@ DESCRIPTION = 'some handy functions'
 URL = 'https://github.com/clumsyme/r2d2'
 EMAIL = 'me@imliyan.com'
 AUTHOR = 'Li Yan'
-VERSION = '1.0.0'
+VERSION = '3.0.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [ ]
@@ -81,8 +81,9 @@ setup(
     author_email=EMAIL,
     url=URL,
     python_requires='>=3.6.0',
+    # packages=find_packages(),
     # If your package is a single module, use this instead of 'packages':
-    packages=find_packages(),
+    py_modules=['r2d2'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
